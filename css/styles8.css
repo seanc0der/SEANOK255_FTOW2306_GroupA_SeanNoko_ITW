@@ -1,0 +1,118 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(240, 232, 222);
+}
+
+nav {
+	width: 100%;
+	background-color: #ffbd20;
+	z-index: 1;
+	position: fixed;
+	margin: 0;
+	top: 0;
+}
+
+#nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0;
+	list-style: none;
+}
+
+.nav-item a {
+	text-decoration: none;
+	font-size: 15px;
+	font-family: Garamond, serif;
+	color: black;
+	font-weight: bold;
+}
+
+#hero-banner {
+	background-image: url("../images/hero-image.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	max-height: 100vh;
+	position: relative;
+}
+
+#hero-banner img {
+	max-height: 100vh;
+	object-fit: cover;
+	width: 70%;
+	position: relative;
+	left: 30%;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.2);
+	text-align: center;
+	text-justify: auto;
+	position: absolute;
+	width: 30%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+header h1 {
+	font-weight: bolder;
+	font-size: 5vw;
+}
+
+.h2-title-styler {
+	background-color: #000000;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-family: Garamond, serif;
+	color: #f3cc3c;
+	padding-left: 3px;
+}
+
+.h3-title-styler {
+	color: #7d3f20;
+	font-weight: bold;
+}
+
+.main-section-content {
+	margin-top: 3em;
+}
+
+.page-width {
+	width: 80vw;
+	min-width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#aside-section {
+	background-color: #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+article {
+	margin-top: 100px;
+}
+
+.default-font {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+.link-styler {
+	color: #d19a30;
+}
+
+footer {
+	padding-bottom: 3em;
+}
