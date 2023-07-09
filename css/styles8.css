@@ -47,27 +47,35 @@
 	}
 
 	#header-wrapper {
-		background-color: rgba(0, 0, 0, 0.2);
 		flex: 1;
 		width: 30%;
 		height: auto;
 		max-height: inherit;
+		background-color: rgba(255, 189, 32, 0.2);
 	}
 
 	#hero-text {
-		/* background-color: #f3cc3c;  #remove once done */
 		width: 100%;
-		height: inherit;
+		height: fit-content;
 		max-height: inherit;
-		overflow-y: scroll;
+		overflow-y: auto;
 		text-align: center;
 	}
 
-	header h1 {
+	#hero-text h1 {
 		font-weight: bolder;
-		font-size: 5vw;
+		font-size: calc(1em + 4vw);
 		margin: 0;
-		padding: 0;
+		padding-top: 1.5em;
+	}
+
+	#hero-text p {
+		font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+			"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+		font-size: calc(0.7em + 0.5vw);
+		text-justify: distribute;
+		padding: 1em;
+		font-weight: bold;
 	}
 
 	/* #hero-banner img {
