@@ -25,7 +25,7 @@
 		padding-bottom: 1%;
 	}
 
-	.nav-item a {
+	.nav-title-font {
 		text-decoration: none;
 		font-size: calc(0.5em + 0.8vw);
 		font-family: Garamond, serif;
