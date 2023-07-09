@@ -14,6 +14,8 @@
 		width: 100%;
 		background-color: #ffbd20;
 		z-index: 1;
+		position: fixed;
+		top: 0%;
 	}
 
 	#nav-list {
@@ -35,16 +37,26 @@
 
 	#hero-banner {
 		background-image: url("../images/hero-image.jpg");
-		background-repeat: no-repeat;
-		background-position: center;
+		/* margin-top: -0.1em; */
+		background-repeat: repeat;
+		background-position: top;
 		background-size: cover;
 		width: 100%;
 		height: auto;
 		max-height: 100vh;
-		position: relative;
+		display: flex;
+		/* position: relative; */
 	}
 
-	#hero-banner img {
+	#header-wrapper {
+		background-color: rgba(0, 0, 0, 0.2);
+		flex: 1;
+		width: 30%;
+		height: auto;
+		max-height: inherit;
+	}
+
+	/* #hero-banner img {
 		max-height: 100vh;
 		object-fit: cover;
 		width: 70%;
@@ -61,6 +73,13 @@
 		left: 0;
 		top: 0;
 		bottom: 0;
+	} */
+
+	#img-wrapper {
+		flex: 2;
+		width: 70%;
+		height: auto;
+		max-height: inherit;
 	}
 
 	header h1 {
@@ -117,7 +136,7 @@
 		padding-bottom: 3em;
 	}
 }
-
+/* 
 @media only screen and (max-width: 600px) {
 	.nav-item a {
 		font-size: 0.8em;
@@ -145,4 +164,4 @@
 		position: relative;
 		bottom: 50em;
 	}
-}
+} */
