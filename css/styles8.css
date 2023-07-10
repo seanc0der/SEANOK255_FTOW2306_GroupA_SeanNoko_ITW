@@ -1,3 +1,5 @@
+/*    Default code for XL screen devices, (min/max-width: 1440px or higher)  */
+
 body,
 html {
 	height: 100%;
@@ -7,6 +9,7 @@ html {
 
 body {
 	background-color: #fff9eb;
+	min-width: 320px;
 }
 
 #nav-bar {
@@ -22,6 +25,8 @@ body {
 	justify-content: space-around;
 	list-style: none;
 	margin: 0%;
+	padding-left: 0%;
+	padding-right: 0%;
 	padding-top: calc(0.5em + 0.5vw);
 	padding-bottom: calc(0.5em + 0.5vw);
 }
@@ -50,7 +55,8 @@ body {
 	width: 30%;
 	height: auto;
 	max-height: inherit;
-	background-color: rgba(255, 189, 32, 0.3);
+	outline: 0.1em solid black;
+	background-color: rgba(255, 189, 32, 0.4);
 }
 
 #hero-text {
@@ -71,8 +77,8 @@ body {
 #hero-text p {
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-	font-size: calc(0.7em + 0.5vw);
-	text-justify: distribute;
+	font-size: calc(0.7em + 0.4vw);
+	text-align: justify;
 	padding: 1em;
 	font-weight: bold;
 }
@@ -90,6 +96,7 @@ body {
 	height: 100%;
 	max-height: inherit;
 	object-fit: cover;
+	outline: 0.1em solid black;
 }
 
 article {
@@ -103,16 +110,16 @@ footer {
 }
 
 .h2-title-styler {
-	border-bottom: 0.1em solid black;
+	border-bottom: 0.1em solid #d36500;
 	font-family: Garamond, serif;
-	font-size: calc(1em + 2.4vw);
-	color: #ffbd20;
+	font-size: calc(1em + 2.3vw);
+	color: #d36500;
 	margin-top: 0;
 }
 
 .h3-title-styler {
 	font-family: Garamond, serif;
-	color: #c62e65;
+	color: black;
 	font-size: calc(0.7em + 1vw);
 	font-weight: bold;
 }
@@ -123,7 +130,6 @@ footer {
 
 .page-width {
 	width: 90vw;
-	/* min-width: auto; */
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -135,44 +141,110 @@ footer {
 }
 
 .link-styler {
-	color: #f9b3d1;
+	color: #b06d90;
 }
 
 footer {
 	padding-bottom: 1em;
 }
 
-@media only screen and (min-width: 768px) {
+/*    Code for standard to slightly large screen devices (min/max-width: 1024px-1440px)  */
+
+@media only screen and (max-width: 1439px) {
+	.nav-title-font {
+		font-size: calc(0.6em + 0.8vw);
+	}
+
+	#header-wrapper {
+		width: 30%;
+	}
+
+	#hero-text h1 {
+		font-weight: bolder;
+		font-size: calc(1.5em + 4vw);
+		padding-top: 2em;
+	}
+
+	#img-wrapper {
+		width: 70%;
+		max-width: 70%;
+	}
+}
+
+/*    Code for medium screen devices, particularly tablets, (min/max-width: 768px-1023px)  */
+
+@media only screen and (max-width: 1023px) {
 	.nav-title-font {
 		font-size: calc(0.7em + 0.8vw);
 	}
+
 	#header-wrapper {
 		width: 40%;
 	}
+
 	#hero-text h1 {
 		font-size: calc(1.5em + 4vw);
 		padding-top: 2.5em;
 	}
+
 	#img-wrapper {
 		width: 60%;
 		max-width: 60%;
 	}
 }
 
-@media only screen and (min-width: 1024px) {
+/*    Code for small to large mobile screen devices (max-width: 767px)  */
+
+@media only screen and (max-width: 767px) {
+	#nav-bar {
+		position: static;
+	}
+
+	#nav-list {
+		padding-top: calc(0.7em + 0.7vw);
+		padding-bottom: calc(0.6em + 0.7vw);
+	}
+
 	.nav-title-font {
-		font-size: calc(0.6em + 0.8vw);
+		font-size: calc(0.7em + 1.2vw);
 	}
+
+	#hero-banner {
+		width: 100vw;
+		flex-direction: column;
+	}
+
 	#header-wrapper {
-		width: 30%;
+		width: inherit;
+		height: 100%;
+		outline: none;
 	}
+
 	#hero-text h1 {
-		font-weight: bolder;
 		font-size: calc(1.5em + 4vw);
-		padding-top: 2.5em;
+		padding-top: 1.3em;
 	}
+
 	#img-wrapper {
-		width: 70%;
-		max-width: 70%;
+		width: inherit;
+		height: fit-content;
+		max-height: 40%;
+	}
+
+	#img-wrapper img {
+		width: 100vw;
+		max-height: 100%;
+	}
+
+	.h2-title-styler {
+		font-size: calc(1.2em + 2.8vw);
+	}
+
+	.h3-title-styler {
+		font-size: calc(0.9em + 1.2vw);
+	}
+
+	.main-sections .default-font {
+		font-size: calc(0.6em + 0.7vw);
 	}
 }
