@@ -148,7 +148,11 @@ footer {
 	padding-bottom: 1em;
 }
 
-/*    Code for standard to slightly large screen devices (min/max-width: 1024px-1440px)  */
+/* 
+
+Code for standard to slightly large screen devices: (min/max-width: 1024px-1439px)  
+
+*/
 
 @media only screen and (max-width: 1439px) {
 	.nav-title-font {
@@ -171,7 +175,11 @@ footer {
 	}
 }
 
-/*    Code for medium screen devices, particularly tablets, (min/max-width: 768px-1023px)  */
+/*   
+
+Code for medium screen devices, particularly tablets: (min/max-width: 768px-1023px)  
+
+*/
 
 @media only screen and (max-width: 1023px) {
 	.nav-title-font {
@@ -193,7 +201,11 @@ footer {
 	}
 }
 
-/*    Code for small to large mobile screen devices (max-width: 767px)  */
+/*    
+
+Code for small to large mobile screen devices (max-width: 767px)  
+
+*/
 
 @media only screen and (max-width: 767px) {
 	#nav-bar {
